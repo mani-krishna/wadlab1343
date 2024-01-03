@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<script>
+var a = prompt("Enter ");
+var c=0;
+document.write("The value of a is " + a + "<br/>");
+for(var i=1;i<a;i++){
+ if(a%i==0){c++}
+}
+if(c==1){
+document.write("it is prime num");
+}
+else{document.write("it is not prime");}
+
+</script>
+</body>
+</html>
