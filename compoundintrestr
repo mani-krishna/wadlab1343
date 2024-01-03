@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<script>
+var p = prompt("Enter principle amount");
+document.write("The value of p is " + p + "<br/>");
+
+var r = prompt("Enter the rate of interest");
+document.write("The value of r is " + r + "<br/>");
+
+var n = prompt("Enter no of times interest compounded");
+document.write("The value of n is " + n + "<br/>");
+
+var t = prompt("Enter the time in years");
+document.write("The value of t is " + t + "<br/>");
+var z=r/n;
+var a = 1+(z);
+var m=n*t;
+var A = Math.pow(a, m);
+var ci = p * A;
+document.write("The compound interest is " + ci);
+</script>
+</body>
+</html>
