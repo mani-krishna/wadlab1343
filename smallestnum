@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<script>
+var a = prompt("Enter ");
+document.write("The value of a is " + a + "<br/>");
+
+var b = prompt("Enter ");
+document.write("The value of b is " + b + "<br/>");
+
+var c = prompt("Enter ");
+document.write("The value of c is " + c + "<br/>");
+if(a<=b && a<=c){document.write(a+"is the smallest");}
+else if(b<=a && b<=c){document.write(b+"is the smallest");}
+else if(c<=a && c<=b){document.write(c+"is the smallest");}
+
+</script>
+</body>
+</html>
