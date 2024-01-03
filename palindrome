@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<script>
+var a = prompt("Enter ");
+var reversed=0;
+var remainder,copy;
+document.write("The value of a is " + a + "<br/>");
+copy=a;
+ while (a!= 0) {
+        remainder = a % 10;
+        reversed = reversed * 10 + remainder;
+        a=Math.floor(a/10);
+    }
+if(copy==reversed)
+{
+document.write("it is palindrome");
+}
+else
+{
+document.write("not a palindrome");
+}
+
+</script>
+</body>
+</html>
