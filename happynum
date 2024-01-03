@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<script>
+var num = prompt("Enter ");
+var rem,sum=0;
+document.write("The value of num is " + num + "<br/>");
+isHappyNumber(num);
+function isHappyNumber(num) {
+  let sum = 0;
+  while (num > 0) {
+    rem=num%10;
+    sum =sum+ Math.pow(rem, 2);
+    num = Math.floor(num / 10);
+  }
+  if (sum == 1) {
+    document.write("this is happy num");
+  } else if (sum == 4) {
+    document.write("this is not happy num");
+  } else {
+    return isHappyNumber(sum);
+  }
+}
+
+
+
+
+</script>
+</body>
+</html>
