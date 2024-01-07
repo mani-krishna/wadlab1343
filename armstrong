@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Armstrong</title>
+</head>
+<body>
+  <script>
+    var a = prompt("Enter the value");
+    var copy = a;
+    var rem, sum = 0;
+    while (a != 0) {
+      rem = a % 10;
+      sum = sum + (rem * rem);
+      a = Math.floor(a / 10);
+    }
+    document.write("The value is " + sum);
+    if (copy == sum) {
+      document.write("<br>Armstrong number");
+    } else {
+      document.write("<br>Not Armstrong number");
+    }
+  </script>
+</body>
+</html>
